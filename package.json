@@ -1,0 +1,23 @@
+{
+  "name": "node-mqtt",
+  "description": "MQTT implementation for Node.JS",
+  "version": "0.0.1",
+  "author": {
+    "name": "lijing",
+    "email": "lij0511@163.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lij0511/node-mtqq.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "engines": {
+    "node": ">=0.6.5"
+  },
+  "dependencies": {
+  }
+}
+
