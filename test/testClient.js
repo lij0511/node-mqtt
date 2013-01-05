@@ -7,9 +7,12 @@ client.on('sessionOpened', function() {
 client.on('message', function(topic, payload) {
   console.log(topic);
   console.log(payload.toString());
-  client.publish(topic, payload);
 });
+//
+setTimeout(function() {
+  client.publish('/topic', new Buffer('hello world'), 2, 0);
+}, 3000);
 
 //setTimeout(function() {
-//  client.publish('/topic', new Buffer('hello world'));
-//}, 3000);
+//  client.publish('/topic', new Buffer('hello world11'), 2, 0);
+//}, 6000);
