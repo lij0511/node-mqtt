@@ -10,7 +10,7 @@ client.on('message', function(topic, payload) {
 });
 //
 setTimeout(function() {
-  client.publish('/topic', new Buffer('hello world'), 2, 0);
+  client.publish('/topic', new Buffer('hello world'), 1, 0);
 }, 3000);
 
 //setTimeout(function() {
